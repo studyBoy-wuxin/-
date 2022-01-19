@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edu.gdut.onlinemusic.Dao.UserDao">
+
+    <select id="findUserByID" resultType="User">
+        select * from user where Uid=#{id}
+    </select>
+
+    <update id="updateUser">
+        update user set
+        <if test="Uname != null and Uname != ''">
+            Uname = #{Uname},
+        </if>
+        <if test="sex != null and sex != -1">
+            sex = #{sex},
+        </if>
+        <if test="avater_url != null and avater_url != ''">
+            avater_url = #{avater_url},
+        </if>
+            Uid=#{Uid}
+        where Uid=#{Uid}
+    </update>
+
+    <insert id="register">
+        insert into user(Uid,Uname,Upassword,sex,avater_url) values(#{Uid},#{Uname},#{Upassword},#{sex},#{avater_url})
+    </insert>
+</mapper>

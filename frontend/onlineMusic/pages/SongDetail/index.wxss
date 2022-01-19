@@ -1,0 +1,187 @@
+.songDetailContainer {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #b86154;
+  opacity: 0.8;
+}
+.songDetailContainer .bottoncircle {
+  z-index: 100;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background-color: white;
+  margin: 10rpx 0;
+}
+.songDetailContainer .needle {
+  z-index: 99;
+  position: relative;
+  left: 60rpx;
+  top: -35rpx;
+  width: 192rpx;
+  height: 274rpx;
+  -webkit-transform-origin: 40rpx 0;
+      -ms-transform-origin: 40rpx 0;
+          transform-origin: 40rpx 0;
+  -webkit-transform: rotate(-25deg);
+      -ms-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  -webkit-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+.songDetailContainer .needlerotate {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.songDetailContainer .circle {
+  z-index: 98;
+  position: relative;
+  top: -170rpx;
+  width: 568rpx;
+  height: 568rpx;
+  -webkit-transition: 1s all linear;
+  -o-transition: 1s all linear;
+  transition: 1s all linear;
+}
+.songDetailContainer .circle .disc {
+  width: 568rpx;
+  height: 568rpx;
+}
+.songDetailContainer .circle .musicImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 340rpx;
+  height: 340rpx;
+  border-radius: 50%;
+}
+.songDetailContainer .bottom {
+  height: 26vh;
+  width: 100%;
+  background-color: #b86154;
+  opacity: 0.8;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  bottom: 0;
+}
+.songDetailContainer .bottom .a {
+  height: 8vh;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  padding: 20rpx 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.songDetailContainer .bottom .a .topicon {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.songDetailContainer .bottom .b {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 0 20rpx;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.songDetailContainer .bottom .b slider {
+  margin: 0 14rpx;
+}
+.songDetailContainer .bottom .b .startEnd {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  font-size: 28rpx;
+  padding: 0 10rpx;
+}
+.songDetailContainer .bottom .c {
+  height: 10vh;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.songDetailContainer .bottom .c .kuai {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.songDetailContainer .bottom .c .kuai Text {
+  font-size: 18rpx;
+  color: white;
+}
+.songDetailContainer .bottom .c .icon {
+  font-size: 70rpx;
+  color: #fce6e4;
+}

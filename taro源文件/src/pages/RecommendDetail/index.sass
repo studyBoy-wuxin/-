@@ -1,0 +1,113 @@
+.RecommendDetail_box
+  display: flex
+  flex-direction: column
+  height: 100vh
+  width: auto
+  box-sizing: border-box
+
+
+  .top
+    height: 26vh
+    width: 100%
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    box-sizing: border-box
+
+    .a
+      width: 100%
+      position: absolute
+      z-index: -1
+      opacity: 0.8
+    .top_left
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 45%
+      Image
+        width: 250px
+        height: 250px
+        border-radius: 20px
+    .top_right
+      display: flex
+      flex-direction: column
+      width: 50%
+      justify-content: center
+      color: white
+      .songDetail
+        height: 250px
+        .songListName
+          font-size: 30px
+        .authorName
+          padding: 20px 0
+          font-size: 28px
+        .detail
+          font-size: 20px
+          width: 100%
+          overflow: hidden
+          /* 用...代替多余的文本 */
+          text-overflow: ellipsis
+          /* 常规的设置不了，所以得借助内核元素 */
+          display: -webkit-box
+          /* 设置对其方式 */
+          -webkit-box-orient: vertical
+          /* 设置行数 */
+          -webkit-line-clamp: 2
+
+  .bottom
+    height: 70vh
+    width: 100%
+    box-sizing: border-box
+    border-radius: 30px
+    position: relative
+    top: -20px
+    background-color: white
+    padding: 0 20px
+    .bottom_header
+      height: 80px
+      display: flex
+      flex-direction: row
+      flex-wrap: nowrap
+      align-items: center
+      .icon
+        font-size: 50px
+      .title
+        margin: 0 7px 0 10px
+        font-size: 32px
+        color: black
+      Text
+        font-size: 28px
+        color: #b2b2b2
+    .MusicInfo_box
+      display: flex
+      flex-direction: column
+      align-items: center
+      .MusucItem
+        width: 100%
+        height: 100px
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+
+        .musicInfo
+          width: 60%
+          display: flex
+          flex-direction: column
+          align-items: flex-start
+          justify-content: center
+          .a
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            align-items: center
+            font-size: 20px
+            color: #848484
+            .iconw
+              font-size: 30px
+              margin-right: 10px
+              color: #c9ac58
+        .iconb
+          font-size: 60px
+          color: #b2b2b2
+

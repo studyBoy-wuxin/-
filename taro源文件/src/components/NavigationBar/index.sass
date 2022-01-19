@@ -1,0 +1,46 @@
+@import "~taro-ui/dist/style/components/search-bar.scss"
+@import "~taro-ui/dist/style/components/button.scss"
+@import "~taro-ui/dist/style/components/icon.scss"
+
+.NBar_father
+  display: block
+  .NBar_box
+    display: flex
+    flex-direction: row
+    align-items: center
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 100
+    width: 100%
+    flex-shrink: 0
+    .icon_box
+      width: auto
+      display: flex
+      flex-direction: row
+      .closeIcon
+        height: 100%
+        width: 80px
+        display: flex
+        align-items: center
+        justify-content: center
+        color: white
+    .font_box
+      color: white
+      position: absolute
+      display: flex
+      align-items: center
+      justify-content: center
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      margin: auto
+      .search
+        width: 100%
+        padding: 12px 0
+        height: 110%
+

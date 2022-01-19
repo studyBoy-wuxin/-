@@ -1,0 +1,117 @@
+.songDetailContainer
+  width: 100%
+  height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  background-color: #b86154
+  opacity: 0.8
+
+  .bottoncircle
+    z-index: 100
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    background-color: white
+    margin: 10px 0
+
+  .needle
+    z-index: 99
+    position: relative
+    left: 60px
+    top: -35px
+    width: 192px
+    height: 274px
+    transform-origin: 40px 0
+    transform: rotate(-25deg)
+    transition: 1s all
+
+  .needlerotate
+    transform: rotate(0deg)
+
+  .circle
+    z-index: 98
+    position: relative
+    top: -170px
+    width: 568px
+    height: 568px
+    transition: 1s all linear
+
+    .disc
+      width: 568px
+      height: 568px
+    .musicImg
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      margin: auto
+      width: 340px
+      height: 340px
+      border-radius: 50%
+
+  .bottom
+    height: 26vh
+    width: 100%
+    background-color: #b86154
+    opacity: 0.8
+    display: flex
+    flex-direction: column
+    position: fixed
+    bottom: 0
+    .a
+      height: 8vh
+      width: 100%
+      display: flex
+      flex-direction: row
+      flex-wrap: nowrap
+      padding: 20px 30px
+      box-sizing: border-box
+      .topicon
+        display: flex
+        flex-grow: 1
+        justify-content: center
+        align-items: center
+    .b
+      box-sizing: border-box
+      width: 100%
+      padding: 0 20px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      slider
+        margin: 0 14px
+      .startEnd
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        color: white
+        font-size: 28px
+        padding: 0 10px
+    .c
+      height: 10vh
+      width: 100%
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+      .kuai
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        Text
+          font-size: 18px
+          color: white
+      .icon
+        font-size: 70px
+        color: #fce6e4
+
+
+
+
+
+
+

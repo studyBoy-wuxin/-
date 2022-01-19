@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edu.gdut.onlinemusic.Dao.Love_MusicDao">
+    <select id="findMidListByuid" resultType="String">
+        select mid from love_music where uid=#{uid} order by id desc
+    </select>
+
+    <insert id="insertLoveMusic">
+        insert into love_music(mid,uid) values(#{mid},#{uid})
+    </insert>
+
+    <delete id="removeLoveMusic">
+        delete from love_music where mid=#{mid} and uid=#{uid}
+    </delete>
+
+    <select id="findNumByUidAndMid" resultType="Integer">
+        select count(*) from love_music where mid=#{mid} and uid=#{uid}
+    </select>
+</mapper>

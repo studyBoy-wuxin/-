@@ -1,0 +1,20 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /OnlineMusic
+
+logging:
+  level:
+    com.edu: debug
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/onlinemusic?useSSL=false
+    username: root
+    password: admin
+
+
+mybatis:
+  type-aliases-package: com/edu/gdut/onlinemusic/Entity
+  mapper-locations: classpath:Mapper/*.xml

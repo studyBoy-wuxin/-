@@ -1,0 +1,21 @@
+@import "~taro-ui/dist/style/components/input.scss";
+@import "~taro-ui/dist/style/components/divider.scss";
+@import "~taro-ui/dist/style/components/avatar.scss";
+@import "~taro-ui/dist/style/components/list.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/message.scss";
+@import "~taro-ui/dist/style/components/action-sheet.scss";
+@import "~taro-ui/dist/style/components/modal.scss";
+@import "~taro-ui/dist/style/components/slider.scss";
+@import "~taro-ui/dist/style/components/activity-indicator.scss";
+@import '~taro-ui/dist/style/components/loading.scss';
+
+page{
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+
+  .at-message {
+    top:auto;
+  }
+}

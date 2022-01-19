@@ -1,0 +1,201 @@
+.admin_box
+  min-height: 100vh
+  width: 100%
+  box-sizing: border-box
+
+  .Swiper-view
+    width: 100%
+    padding-top: 18px
+    height: 20vh
+    .myswiper
+      width: 100%
+      height: 100%
+      text-align: center
+      Image
+        width: 95%
+        height: 100%
+        border-radius: 20px
+        box-shadow: 0 0 4px 4px #f2f2f2
+
+  .Icon_box
+    width: auto
+    height: 12vh
+    margin: 20px
+    display: flex
+    flex-direction: row
+    box-sizing: border-box
+
+    .IconItem
+
+      height: 100%
+      width: 23%
+      border-radius: 20px
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-wrap: wrap
+      flex-direction: column
+      //等分父元素宽度
+      flex-grow: 1
+      .box
+        width: 100px
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 50%
+        height: 100px
+        background-color: #fff1f1
+        .icon
+          font-size: 60px
+          color: #ff7271
+      .desc
+        font-size: 30px
+
+  .recommend_box
+    width: 100%
+    height: 28vh
+    padding: 0 20px
+    box-sizing: border-box
+    .scrollview
+      height: 80%
+      width: 100%
+      display: flex
+      flex-direction: row
+      white-space: nowrap
+      .scrollItem
+        max-height: 100%
+        width: 200px
+        box-sizing: border-box
+        margin-right: 20px
+        display: inline-block
+        Image
+          width: 200px
+          height: 200px
+          border-radius: 20px
+        View
+          width: 100%
+          font-size: 25px
+          /* 多行文本溢出，用...代替 */
+          /* 溢出的隐藏 */
+          overflow: hidden
+          /* 用...代替多余的文本 */
+          text-overflow: ellipsis
+          /* 常规的设置不了，所以得借助内核元素 */
+          display: -webkit-box
+          /* 设置对其方式 */
+          -webkit-box-orient: vertical
+          /* 设置行数 */
+          -webkit-line-clamp: 2
+
+
+  .chart
+    width: 100%
+    height: 28vh
+    padding: 0 20px
+    box-sizing: border-box
+
+    .topListSwiper
+      width: 100%
+      height: 80%
+      margin-bottom: 40px
+      .topListItem
+        box-sizing: border-box
+        width: 90%
+        height: 100%
+        .topListItemView
+          box-sizing: border-box
+          border-radius: 25px
+          width: 98%
+          height: 100%
+          justify-content: space-between
+          align-items: center
+          flex-direction: row
+          display: flex
+          padding: 15px
+          .topListItem_left
+            width: 36%
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            Text
+              font-size: 40px
+              font-weight: 700
+            .img_box
+              width: 100%
+              height: 60%
+              display: flex
+              justify-content: center
+              align-items: flex-end
+              position: relative
+              .q
+                position: absolute
+                width: 160px
+                height: 160px
+                z-index: 100
+              .w
+                position: absolute
+                width: 140px
+                height: 140px
+                z-index: 80
+                opacity: 0.8
+                transform: translateX(35px)
+              .e
+                position: absolute
+                width: 120px
+                height: 120px
+                transform: translateX(65px)
+                z-index: 60
+                opacity: 0.6
+              View
+                Image
+                  width: 100%
+                  height: 100%
+                  border-radius: 30px
+          .topListItem_right
+            padding-left: 70px
+            width: 70%
+            height: 100%
+            display: flex
+            justify-content: space-around
+            flex-direction: column
+            .rightItem
+              display: flex
+              flex-direction: row
+              Text
+                font-size: 28px
+              Text:nth-of-type(2)
+                color: #838c8b
+              .icon
+                font-size: 34px
+                display: flex
+                align-items: center
+                margin-left: 20px
+
+
+
+
+
+
+  .top_title
+    width: 100%
+    height: 20%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    Text
+      font-weight: 700
+      font-size: 40px
+    View
+      border-radius: 50px
+      display: flex
+      flex-wrap: nowrap
+      justify-content: center
+      align-items: center
+      border: 3px solid #eaeaea
+      font-size: 20px
+      padding: 0 10px
+
+
+

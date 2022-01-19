@@ -1,0 +1,113 @@
+.Login_box {
+  height: 100vh;
+  width: auto;
+}
+.Login_box .wrapper {
+  position: relative;
+  z-index: 90;
+  padding-bottom: 40rpx;
+}
+.Login_box .wrapper .left-top-sign {
+  font-size: 120rpx;
+  color: #f8f8f8;
+  position: relative;
+  left: -16rpx;
+}
+.Login_box .wrapper .welcome {
+  position: relative;
+  left: 50rpx;
+  top: -90rpx;
+  font-size: 46rpx;
+  color: #555;
+}
+.Login_box .wrapper .input-content {
+  padding: 0 60rpx;
+}
+.Login_box .wrapper .input-content .input-item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 30rpx;
+  background: #f8f6fc;
+  height: 150rpx;
+  border-radius: 4rpx;
+  margin-bottom: 50rpx;
+}
+.Login_box .wrapper .input-content .input-item .tit {
+  height: 50rpx;
+  line-height: 56rpx;
+  font-size: 30rpx;
+  color: #606266;
+}
+.Login_box .wrapper .input-content .input-item .input {
+  height: 60rpx;
+  font-size: 30rpx;
+  color: #303133;
+  width: 96%;
+  background-color: #f8f6fc;
+}
+.Login_box .wrapper .confirm-btn {
+  width: 630rpx !important;
+  height: 76rpx;
+  line-height: 76rpx;
+  border-radius: 50rpx;
+  margin-top: 70rpx;
+  background: #d43c33;
+  color: #fff;
+  font-size: 32rpx;
+  padding: 0;
+}
+.Login_box .wrapper .forget-section {
+  font-size: 28rpx;
+  color: #4399fc;
+  text-align: center;
+  margin-top: 40rpx;
+}
+.Login_box .wrapper .wx-login {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10rpx 0;
+}
+.Login_box .wrapper .wx-login .icon {
+  font-size: 40rpx;
+  color: #28c445;
+  margin-right: 10rpx;
+}
+.Login_box .wrapper .wx-login Text {
+  font-size: 30rpx;
+}
+.Login_box .register-section {
+  position: absolute;
+  left: 0;
+  bottom: 50rpx;
+  width: 100%;
+  font-size: 28rpx;
+  color: #606266;
+  text-align: center;
+}
+.Login_box .register-section text {
+  color: #4399fc;
+  margin-left: 10rpx;
+}
